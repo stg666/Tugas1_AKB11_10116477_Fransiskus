@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Verifikasi_Activity"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txtKel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kode Keluarga"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:layout_marginTop="56dp"
+            android:layout_marginHorizontal="23dp"
+            />
+
+        <TextView
+            android:id="@+id/txtKode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ketikkan Kode yang dimiliki oleh ayah bunda miliki diaini"
+            android:textSize="18dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginHorizontal="25dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/etKode"
+            android:layout_marginHorizontal="22dp"
+            android:layout_marginVertical="30dp"
+            android:background="@drawable/rounded_edittext"
+            android:text="A1B2C3"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Syarat"
+            android:layout_marginVertical="2dp"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:id="@+id/btnMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="22dp"
+            android:layout_marginVertical="10dp"
+            android:text="Masuk"
+            android:background="@drawable/rounded_button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPunya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belum Punya Kode Keluarga?"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:layout_marginVertical="24dp"/>
+
+        <Button
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="Beli Kode Keluarga Disini"
+            android:textSize="16dp"
+            android:background="@drawable/rounded_button2"
+            android:textColor="#dedede"/>
+    </LinearLayout>
+</LinearLayout>
